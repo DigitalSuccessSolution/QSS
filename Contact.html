@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <script src="https://cdn.tailwindcss.com"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QSS Audit & Assurance - Built on Trust, Driven by Insight</title>
@@ -56,28 +58,32 @@
     <div class="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-gold"></div>
   </div>
 
-  <!-- Header -->
-<header class="fixed w-full bg-dark/90 backdrop-blur-md z-40 border-b border-gold/20">
+  <!-- ✅ Header Start -->
+<header class="fixed w-full bg-black/90 backdrop-blur-md z-50 border-b border-yellow-500/20">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#" class="text-2xl font-bold text-gold font-playfair">QSS</a>
+    <!-- Logo -->
+    <a href="#">
+      <img src="/images/nav-logo.png" alt="QSS Logo" class="h-10 w-auto" />
+    </a>
 
-    <!-- Desktop Navigation -->
+    <!-- Desktop Nav -->
     <nav class="hidden lg:flex items-center space-x-10">
-      <a href="index.html" class="text-light hover:text-gold transition-all duration-300 relative group">Home</a>
-      <a href="about.html" class="text-light hover:text-gold transition-all duration-300 relative group">About</a>
-      <a href="Services.html" class="text-light hover:text-gold transition-all duration-300 relative group">Our Services</a>
-      <a href="career.html" class="text-light hover:text-gold transition-all duration-300 relative group">Career</a>
-      <a href="blog.html" class="text-light hover:text-gold transition-all duration-300 relative group">Blog</a>
-      <a href="News.html" class="text-light hover:text-gold transition-all duration-300 relative group">News</a>
-      <a href="Contact.html" class="text-light hover:text-gold transition-all duration-300 relative group">Contact Us</a>
+      <a href="index.html" class="text-white hover:text-yellow-400">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-400">About</a>
+      <a href="Services.html" class="text-white hover:text-yellow-400">Our Services</a>
+      <a href="career.html" class="text-white hover:text-yellow-400">Career</a>
+      <a href="blog.html" class="text-white hover:text-yellow-400">Blog</a>
+      <a href="News.html" class="text-white hover:text-yellow-400">News</a>
+      <a href="Contact.html" class="text-white hover:text-yellow-400">Contact Us</a>
     </nav>
 
-    <button class="bg-gold text-dark px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 hidden lg:block">
+    <!-- Desktop CTA -->
+    <button class="hidden lg:block bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">
       Get Quote
     </button>
 
-    <!-- Mobile Menu Toggle -->
-    <button id="mobile-menu-button" class="lg:hidden text-gold focus:outline-none" aria-expanded="false">
+    <!-- Mobile Toggle Button -->
+    <button id="mobile-menu-toggle" class="lg:hidden text-yellow-400 focus:outline-none">
       <svg id="menu-icon" class="w-8 h-8 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -87,50 +93,39 @@
     </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden bg-dark/95 backdrop-blur-md w-full px-6 pb-6">
+  <!-- ✅ Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden w-full bg-black/95 backdrop-blur-md px-6 pb-6">
     <div class="flex flex-col space-y-4 pt-4">
-      <a href="index.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">Home</a>
-      <a href="about.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">About</a>
-      <a href="Services.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">Our Services</a>
-      <a href="career.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">Career</a>
-      <a href="blog.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">Blog</a>
-      <a href="News.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">News</a>
-      <a href="Contact.html" class="text-light hover:text-gold transition-all py-3 border-b border-gold/10">Contact Us</a>
-      <button class="bg-gold text-dark px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all mt-4 w-full">
+      <a href="index.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">About</a>
+      <a href="Services.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">Our Services</a>
+      <a href="career.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">Career</a>
+      <a href="blog.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">Blog</a>
+      <a href="News.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">News</a>
+      <a href="Contact.html" class="text-white hover:text-yellow-400 py-3 border-b border-yellow-500/10">Contact Us</a>
+      <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 mt-4 w-full">
         Get Quote
       </button>
     </div>
   </div>
 </header>
+<!-- ✅ Header End -->
 
-<!-- JavaScript -->
+<!-- ✅ Script to Toggle Mobile Menu (Add just before </body>) -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuIcon = document.getElementById("menu-icon");
-    const closeIcon = document.getElementById("close-icon");
+  const menuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
 
-    menuButton.addEventListener("click", () => {
-      const isHidden = mobileMenu.classList.contains("hidden");
-      mobileMenu.classList.toggle("hidden");
-      menuIcon.classList.toggle("hidden");
-      closeIcon.classList.toggle("hidden");
-      menuButton.setAttribute("aria-expanded", isHidden ? "true" : "false");
-    });
-
-    // Close menu on link click
-    document.querySelectorAll("#mobile-menu a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        menuIcon.classList.remove("hidden");
-        closeIcon.classList.add("hidden");
-        menuButton.setAttribute("aria-expanded", "false");
-      });
-    });
+  menuToggle.addEventListener('click', () => {
+    const isMenuOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
   });
 </script>
+
 
 
 
